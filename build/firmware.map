@@ -1,0 +1,214 @@
+Archive member included to satisfy reference by file (symbol)
+
+build/objfw/libusb.a(usbd_core.o)
+                              build/objfw/bootloader.o (symbol from plugin) (usbd_poll)
+build/objfw/libusb.a(usbd_stm32f103_devfs_asm.o)
+                              build/objfw/bootloader.o (symbol from plugin) (usbd_devfs_asm)
+
+Discarded input sections
+
+ .text          0x00000000        0x0 /var/folders/2p/4z266zp97g9f0w5xxx4hkjz40000gn/T//ccu6eaAs.ltrans0.ltrans.o
+ .data          0x00000000        0x0 /var/folders/2p/4z266zp97g9f0w5xxx4hkjz40000gn/T//ccu6eaAs.ltrans0.ltrans.o
+ .bss           0x00000000        0x0 /var/folders/2p/4z266zp97g9f0w5xxx4hkjz40000gn/T//ccu6eaAs.ltrans0.ltrans.o
+ .bss           0x00000000        0x0 build/objfw/stm32f103.o
+ .text          0x00000000       0xd0 build/objfw/rc5a.o
+ .data          0x00000000        0x0 build/objfw/rc5a.o
+ .bss           0x00000000       0x68 build/objfw/rc5a.o
+ .ARM.attributes
+                0x00000000       0x22 build/objfw/rc5a.o
+ .text          0x00000000      0x134 build/objfw/chacha_a.o
+ .data          0x00000000        0x0 build/objfw/chacha_a.o
+ .bss           0x00000000       0x84 build/objfw/chacha_a.o
+ .ARM.attributes
+                0x00000000       0x22 build/objfw/chacha_a.o
+ .text          0x00000000        0x0 build/objfw/rc6a.o
+ .data          0x00000000        0x0 build/objfw/rc6a.o
+ .bss           0x00000000       0xb0 build/objfw/rc6a.o
+ .text.rc6a_init
+                0x00000000       0x68 build/objfw/rc6a.o
+ .text.rc6a_encrypt
+                0x00000000       0x54 build/objfw/rc6a.o
+ .text.rc6a_decrypt
+                0x00000000       0x54 build/objfw/rc6a.o
+ .ARM.attributes
+                0x00000000       0x22 build/objfw/rc6a.o
+ .data          0x00000000        0x0 build/objfw/libusb.a(usbd_stm32f103_devfs_asm.o)
+ .bss           0x00000000        0x0 build/objfw/libusb.a(usbd_stm32f103_devfs_asm.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+ROM              0x08000000         0x00010000         xr
+RAM              0x20000000         0x00005000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+
+.text           0x08000000      0xbd4
+ *(.isr_vector)
+ .isr_vector    0x08000000       0x40 build/objfw/stm32f103.o
+                0x08000000                __isr_vector
+ *(.rodata.usbd_devfs)
+ *(.rodata.usbd_devfs_asm)
+ .rodata.usbd_devfs_asm
+                0x08000040       0x34 build/objfw/libusb.a(usbd_stm32f103_devfs_asm.o)
+                0x08000040                usbd_devfs_asm
+ *(.rodata.usbd_otgfs)
+ *(.rodata_usbd_otghs)
+ *(.text.usbd_poll)
+ .text.usbd_poll
+                0x08000074        0xc /var/folders/2p/4z266zp97g9f0w5xxx4hkjz40000gn/T//ccu6eaAs.ltrans0.ltrans.o
+                0x08000074                usbd_poll
+ *(.text*)
+ .text.dfu_get_descriptor
+                0x08000080       0x48 /var/folders/2p/4z266zp97g9f0w5xxx4hkjz40000gn/T//ccu6eaAs.ltrans0.ltrans.o
+ .text.dfu_config
+                0x080000c8       0x1c /var/folders/2p/4z266zp97g9f0w5xxx4hkjz40000gn/T//ccu6eaAs.ltrans0.ltrans.o
+ .text.usbd_set_address
+                0x080000e4       0x1e /var/folders/2p/4z266zp97g9f0w5xxx4hkjz40000gn/T//ccu6eaAs.ltrans0.ltrans.o
+ .text.usbd_process_callback
+                0x08000102       0x12 /var/folders/2p/4z266zp97g9f0w5xxx4hkjz40000gn/T//ccu6eaAs.ltrans0.ltrans.o
+ .text.usbd_stall_pid
+                0x08000114       0x26 /var/folders/2p/4z266zp97g9f0w5xxx4hkjz40000gn/T//ccu6eaAs.ltrans0.ltrans.o
+ .text.usbd_process_eptx
+                0x0800013a       0x78 /var/folders/2p/4z266zp97g9f0w5xxx4hkjz40000gn/T//ccu6eaAs.ltrans0.ltrans.o
+ *fill*         0x080001b2        0x2 
+ .text.usbd_process_ep0
+                0x080001b4      0x228 /var/folders/2p/4z266zp97g9f0w5xxx4hkjz40000gn/T//ccu6eaAs.ltrans0.ltrans.o
+ .text.usbd_process_evt
+                0x080003dc       0x64 /var/folders/2p/4z266zp97g9f0w5xxx4hkjz40000gn/T//ccu6eaAs.ltrans0.ltrans.o
+ .text.dfu_set_idle.isra.0
+                0x08000440       0x2c /var/folders/2p/4z266zp97g9f0w5xxx4hkjz40000gn/T//ccu6eaAs.ltrans0.ltrans.o
+ .text.dfu_control
+                0x0800046c      0x168 /var/folders/2p/4z266zp97g9f0w5xxx4hkjz40000gn/T//ccu6eaAs.ltrans0.ltrans.o
+ .text.dfu_reset
+                0x080005d4        0x4 /var/folders/2p/4z266zp97g9f0w5xxx4hkjz40000gn/T//ccu6eaAs.ltrans0.ltrans.o
+ .text.startup.main
+                0x080005d8       0x58 /var/folders/2p/4z266zp97g9f0w5xxx4hkjz40000gn/T//ccu6eaAs.ltrans0.ltrans.o
+                0x080005d8                main
+ .text          0x08000630       0xdc build/objfw/stm32f103.o
+                0x08000630                Reset_Handler
+                0x080006a0                System_Reset
+                0x080006d0                SysTick_Handler
+                0x080006d0                PendSV_Handler
+                0x080006d0                NMI_Handler
+                0x080006d0                UsageFault_Handler
+                0x080006d0                MemManage_Handler
+                0x080006d0                SVC_Handler
+                0x080006d0                DebugMon_Handler
+                0x080006d0                BusFault_Handler
+                0x080006d0                HardFault_Handler
+ .text          0x0800070c      0x408 build/objfw/libusb.a(usbd_stm32f103_devfs_asm.o)
+ *(.rodata*)
+ .rodata.dfu_flash_sdesc
+                0x08000b14       0x20 /var/folders/2p/4z266zp97g9f0w5xxx4hkjz40000gn/T//ccu6eaAs.ltrans0.ltrans.o
+ .rodata.dfu_config_sdesc
+                0x08000b34        0xa /var/folders/2p/4z266zp97g9f0w5xxx4hkjz40000gn/T//ccu6eaAs.ltrans0.ltrans.o
+ .rodata.dfu_product_sdesc
+                0x08000b3e       0x28 /var/folders/2p/4z266zp97g9f0w5xxx4hkjz40000gn/T//ccu6eaAs.ltrans0.ltrans.o
+ .rodata.dfu_manuf_sdesc
+                0x08000b66       0x28 /var/folders/2p/4z266zp97g9f0w5xxx4hkjz40000gn/T//ccu6eaAs.ltrans0.ltrans.o
+ .rodata.dfu_lang_sdesc
+                0x08000b8e        0x4 /var/folders/2p/4z266zp97g9f0w5xxx4hkjz40000gn/T//ccu6eaAs.ltrans0.ltrans.o
+ .rodata.dfu_config_desc
+                0x08000b92       0x1b /var/folders/2p/4z266zp97g9f0w5xxx4hkjz40000gn/T//ccu6eaAs.ltrans0.ltrans.o
+ .rodata.dfu_device_desc
+                0x08000bad       0x12 /var/folders/2p/4z266zp97g9f0w5xxx4hkjz40000gn/T//ccu6eaAs.ltrans0.ltrans.o
+ *fill*         0x08000bbf        0x1 
+ .rodata.dtable
+                0x08000bc0       0x14 /var/folders/2p/4z266zp97g9f0w5xxx4hkjz40000gn/T//ccu6eaAs.ltrans0.ltrans.o
+
+.glue_7         0x08000bd4        0x0
+ .glue_7        0x08000bd4        0x0 linker stubs
+
+.glue_7t        0x08000bd4        0x0
+ .glue_7t       0x08000bd4        0x0 linker stubs
+
+.vfp11_veneer   0x08000bd4        0x0
+ .vfp11_veneer  0x08000bd4        0x0 linker stubs
+
+.v4_bx          0x08000bd4        0x0
+ .v4_bx         0x08000bd4        0x0 linker stubs
+
+.iplt           0x08000bd4        0x0
+ .iplt          0x08000bd4        0x0 build/objfw/stm32f103.o
+
+.rel.dyn        0x08000bd4        0x0
+ .rel.iplt      0x08000bd4        0x0 build/objfw/stm32f103.o
+                0x08000bd4                        . = ALIGN (0x4)
+                0x08000bd4                        __etext = .
+                0x08000c50                        . = (. + SIZEOF (.data))
+                0x08001000                        __app_start = ALIGN (0x800)
+
+.data           0x20000000       0x7c load address 0x08000bd4
+                0x20000000                        . = ALIGN (0x4)
+                0x20000000                        __data_start__ = .
+ *(.data*)
+ .data          0x20000000       0x7c build/objfw/stm32f103.o
+                0x20000000                program_flash
+                0x2000007c                        . = ALIGN (0x4)
+                0x2000007c                        __data_end__ = .
+
+.igot.plt       0x2000007c        0x0 load address 0x08000c50
+ .igot.plt      0x2000007c        0x0 build/objfw/stm32f103.o
+
+.bss            0x2000007c       0xfc load address 0x08000c50
+                0x2000007c                        . = ALIGN (0x4)
+                0x2000007c                        __bss_start__ = .
+ *(.bss*)
+ .bss.dfu_buffer
+                0x2000007c       0x88 /var/folders/2p/4z266zp97g9f0w5xxx4hkjz40000gn/T//ccu6eaAs.ltrans0.ltrans.o
+ .bss.dfu       0x20000104       0x64 /var/folders/2p/4z266zp97g9f0w5xxx4hkjz40000gn/T//ccu6eaAs.ltrans0.ltrans.o
+ .bss.dfu_data  0x20000168       0x10 /var/folders/2p/4z266zp97g9f0w5xxx4hkjz40000gn/T//ccu6eaAs.ltrans0.ltrans.o
+ *(COMMON)
+                0x20000178                        . = ALIGN (0x4)
+                0x20000178                        __bss_end__ = .
+                0x08010000                        PROVIDE (__romend = (ORIGIN (ROM) + LENGTH (ROM)))
+                0x20004ffc                        PROVIDE (__stack = ((ORIGIN (RAM) + LENGTH (RAM)) - 0x4))
+LOAD build/objfw/arc4.o
+LOAD /var/folders/2p/4z266zp97g9f0w5xxx4hkjz40000gn/T//ccu6eaAs.ltrans0.ltrans.o
+LOAD build/objfw/chacha.o
+LOAD build/objfw/gost.o
+LOAD build/objfw/raiden.o
+LOAD build/objfw/rc5.o
+LOAD build/objfw/speck.o
+LOAD build/objfw/xtea.o
+LOAD build/objfw/xtea1.o
+LOAD build/objfw/blowfish.o
+LOAD build/objfw/rtea.o
+LOAD build/objfw/rc6.o
+LOAD build/objfw/rijndael.o
+LOAD build/objfw/magma.o
+LOAD build/objfw/checksum.o
+LOAD build/objfw/crypto.o
+LOAD build/objfw/stm32f103.o
+LOAD build/objfw/descriptors.o
+LOAD build/objfw/bootloader.o
+LOAD build/objfw/rc5a.o
+LOAD build/objfw/chacha_a.o
+LOAD build/objfw/rc6a.o
+LOAD build/objfw/libusb.a
+START GROUP
+LOAD /Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7-m/nofp/libgcc.a
+LOAD /Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a
+END GROUP
+START GROUP
+LOAD /Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7-m/nofp/libgcc.a
+LOAD /Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a
+END GROUP
+OUTPUT(build/firmware.elf elf32-littlearm)
+LOAD linker stubs
+
+.comment        0x00000000       0x45
+ .comment       0x00000000       0x45 /var/folders/2p/4z266zp97g9f0w5xxx4hkjz40000gn/T//ccu6eaAs.ltrans0.ltrans.o
+                                 0x46 (size before relaxing)
+
+.ARM.attributes
+                0x00000000       0x29
+ .ARM.attributes
+                0x00000000       0x2b /var/folders/2p/4z266zp97g9f0w5xxx4hkjz40000gn/T//ccu6eaAs.ltrans0.ltrans.o
+ .ARM.attributes
+                0x0000002b       0x21 build/objfw/stm32f103.o
+ .ARM.attributes
+                0x0000004c       0x21 build/objfw/libusb.a(usbd_stm32f103_devfs_asm.o)
