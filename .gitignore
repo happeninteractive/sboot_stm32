@@ -16,5 +16,4 @@ openocd.cfg
 
 .vscode
 
-# submodules
-CMSIS
+CMSIS/
